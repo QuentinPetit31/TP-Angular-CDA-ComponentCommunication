@@ -1,0 +1,6 @@
+<div class="parent-container">
+  <app-add-user (articleCreated)="userAdded($event)"> </app-add-user>
+  <div *ngFor="let user of users.reverse()">
+    <app-user-element [user]="user"></app-user-element>
+  </div>
+</div>

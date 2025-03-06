@@ -1,0 +1,20 @@
+import { Component, EventEmitter, Output } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
+
+@Component({
+  selector: "app-active-user",
+  standalone: true,
+  templateUrl: "./active-user.component.html",
+  imports: [CommonModule, FormsModule],
+})
+export class ActiveUserComponent {
+  @Output() userUpdated = new EventEmitter<{ name: string; age: number }>();
+
+  newName = "Eddie Murphy";
+  newAge = 63;
+
+  updateUser() {
+    this.userUpdated.emit({ name: this.newName, age: this.newAge });
+  }
+}

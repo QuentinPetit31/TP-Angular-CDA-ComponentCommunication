@@ -1,0 +1,7 @@
+<h2>TP : Component Communication</h2>
+
+<h3>USER DATA</h3>
+<app-user-display [user]="user"></app-user-display>
+
+<h3>Formulaire d’édition :</h3>
+<app-user-edit [user]="user" (userUpdated)="updateUser($event)"></app-user-edit>
