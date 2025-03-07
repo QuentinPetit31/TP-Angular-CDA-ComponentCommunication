@@ -15,6 +15,7 @@ export class ActiveUserComponent {
   newName = "Eddie Murphy";
   newAge = 63;
 
+  //emit envoie un objet au composant parent ( Dès que userUpdated.emit() est déclenché, la fonction updateUser($event) du parent est appelée.)
   updateUser() {
     this.userUpdated.emit({ name: this.newName, age: this.newAge });
   }
