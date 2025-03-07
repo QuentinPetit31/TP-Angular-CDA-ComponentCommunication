@@ -4,6 +4,7 @@ import { CommonModule } from "@angular/common";
 import { ActiveUserComponent } from "../active-user/active-user.component";
 import { UserDataComponent } from "../user-data/user-data.component";
 
+//Ce composant agit comme un conteneur,il gère les données de l'utilisateur actif.
 @Component({
   selector: "app-component-communication",
   standalone: true,

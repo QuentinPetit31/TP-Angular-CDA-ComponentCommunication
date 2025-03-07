@@ -2,6 +2,7 @@ import { Component, EventEmitter, Output } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 
+//Ce composant est responsable de modifier les informations d'un utilisateur et d'envoyer ces mises à jour au composant parent (component-communication).
 @Component({
   selector: "app-active-user",
   standalone: true,
